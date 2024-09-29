@@ -79,7 +79,7 @@ CREATE TABLE save_failure_log (
 ```
  2.데이터 저장 실패시 logback을 통한 데이터 저장, DB를 통한 데이터 저장하여 추적을 정확하게 할 수 있습니다.
 
- 3.Application 실행 시 java/com/example/danal/csv/save/pjt/batch/config/BatchConfiguration.java 클래스의 csv 파일 경로를 설정필요 합니다. 
+ 3.Application 실행 시 java/com/example/danal/csv/save/pjt/batch/config/BatchConfiguration.java 클래스의 csv 파일 경로 설정필요 합니다. 
 
 ** private static final String FILE_PATH = "/Users/frankheo/Downloads/danal.csv";
 
