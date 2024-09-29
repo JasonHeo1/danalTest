@@ -71,9 +71,11 @@ CREATE TABLE save_failure_log (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-2.데이터 저장 실패시 logback을 통한 데이터 저장, DB를 통한 데이터 저장하여 추적을 정확하게 할 수 있음.
-3.Application 실행 시 java/com/example/danal/csv/save/pjt/batch/config/BatchConfiguration.java 클래스의 csv 파일 경로를 설정필요 함. private static final String FILE_PATH = "/Users/frankheo/Downloads/danal.csv";
-4.테스트 케이스 (Junit) 실행 시 별도의 test db 구성 권장함. ddl은 위와 같이 동일하게 실행, 생성하면 됨.
+##2.데이터 저장 실패시 logback을 통한 데이터 저장, DB를 통한 데이터 저장하여 추적을 정확하게 할 수 있음.
+
+##3.Application 실행 시 java/com/example/danal/csv/save/pjt/batch/config/BatchConfiguration.java 클래스의 csv 파일 경로를 설정필요 함. private static final String FILE_PATH = "/Users/frankheo/Downloads/danal.csv";
+
+##4.테스트 케이스 (Junit) 실행 시 별도의 test db 구성 권장함. ddl은 위와 같이 동일하게 실행, 생성하면 됨.
 
 
 
