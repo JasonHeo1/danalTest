@@ -1,0 +1,37 @@
+SPRING:
+    APPLICATION:
+        NAME: CSV.SAVE.PJT
+    datasource:
+        username: root
+        url: jdbc:mysql://localhost:3307/testdb?useSSL=false
+        password: password
+        jpa:
+            show-sql: true
+            properties:
+                hibernate:
+                    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+                #    hibernate:
+                # Hibernate ddl auto (create, create-drop, validate, update)
+    #      ddl-auto: create
+spring:
+    batch:
+        jdbc:
+            initialize-schema: ALWAYS
+        job:
+            enabled: true
+
+logging:
+    level:
+        root: INFO
+        com.example.danal.csv.save.pjt: DEBUG
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+        file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file:
+        name: ./logs/${spring.application.name}.log
+    logback:
+        rollingpolicy:
+            file-name-pattern: ./logs/${spring.application.name}-%d{yyyy-MM-dd}.%i.log
+            max-file-size: 10MB
+            max-history: 30
+            total-size-cap: 3GB
