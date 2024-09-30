@@ -3,7 +3,7 @@
 | springframework  | 6.1.13    |
 | springbatch | 5.1.2     |
 | OpenJDK    | 17    |
-
+| Gradle    | 8.10.2    |
  1. 공공데이터 저장 테이블
     데이터 무결성 외래 키 관계 설정:
    PUBLIC_DATA 테이블에 스프링 배치 실행 정보를 연결하는 JOB_EXECUTION_ID 컬럼을 추가하고 fk로 설정, 이를 BATCH_JOB_EXECUTION 테이블과 연결했습니다.
