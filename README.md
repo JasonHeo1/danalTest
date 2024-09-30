@@ -84,6 +84,7 @@ CREATE TABLE save_failure_log (
 ** private static final String FILE_PATH = "/Users/frankheo/Downloads/danal.csv";
 
  4.테스트 케이스 (Junit) 실행 시 별도의 test db 구성 권장함. ddl은 위와 같이 동일하게 실행, 생성하면 됨.
+   개발DB정보는 application.yml, TestCase 실행 DB 정보는 application-test.yml 에서 DB 정보를 셋팅하면 됩니다.
 
 
 
